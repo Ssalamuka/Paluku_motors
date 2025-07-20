@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paluku Motors | Car Rental Service in Uganda</title>
  <link rel="stylesheet" href="assets/css/style.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -27,8 +28,8 @@
 
   <section class="hero" style="background-image:url('assets/images/hero.jpg')">
     <div class="hero-content">
-      <h2>Affordable & Reliable Car Rentals in Uganda</h2>
-      <p>Choose from our wide range of vehicles for business or leisure</p>
+      <h1>Find Your Perfect Ride</h1>
+      <p>Explore Uganda with our reliable and affordable car rental service.</p>
       <a href="booking.html" class="btn-primary">Book a Car Now</a>
     </div>
   </section>
@@ -50,35 +51,35 @@
   </div>
   <div class="booking-form-wrapper">
     <h2>Quick Booking</h2>
-    <form action="booking.html" method="GET">
-      
-      <label>Pickup Location:
-        <select name="pickup_location">
+    <form action="booking.html" method="GET" class="booking-form">
+      <div class="form-group">
+        <label for="pickup_location">Pickup Location:</label>
+        <select name="pickup_location" id="pickup_location">
           <option>Kampala</option>
           <option>Entebbe Airport</option>
         </select>
-      </label>
-      <label>Pickup Date & Time:
-        <input type="datetime-local" name="pickup_time">
-      </label> 
-      <br> <br>
-      <label>Return Date & Time:
-        <input type="datetime-local" name="return_time">
-      </label>
-      <label>Car Type:
-        <select name="car_type">
+      </div>
+      <div class="form-group">
+        <label for="pickup_time">Pickup Date & Time:</label>
+        <input type="datetime-local" name="pickup_time" id="pickup_time">
+      </div>
+      <div class="form-group">
+        <label for="return_time">Return Date & Time:</label>
+        <input type="datetime-local" name="return_time" id="return_time">
+      </div>
+      <div class="form-group">
+        <label for="car_type">Car Type:</label>
+        <select name="car_type" id="car_type">
           <option>Economy</option>
           <option>SUV</option>
           <option>Luxury</option>
           <option>Van</option>
         </select>
-      </label>
-      <br> <br>
+      </div>
       <button type="submit">Check Availability</button>
     </form>
-    </form>
   </div>
-  
+
 </section>
 
   </section>
@@ -87,9 +88,9 @@
     <h3>Customer Testimonials</h3>
     <blockquote>
       “Great experience, clean and fuel-efficient cars.”  Alice K.
-    </blockquote> 
+    </blockquote>
     <blockquote>
-      “Reliable pickup from Entebbe. Highly recommend.”   Johnson 
+      “Reliable pickup from Entebbe. Highly recommend.”   Johnson
     </blockquote>
   </section>
 <br>
@@ -105,4 +106,3 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
-

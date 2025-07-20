@@ -10,12 +10,13 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust for sticky header */
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
-  background-color: #f9fafd;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fdfdff;
   line-height: 1.6;
   min-height: 100vh;
 }
@@ -29,13 +30,13 @@ body {
 
 /* Links */
 a {
-  color: #002366; /* Deep blue primary */
+  color: #0056b3; /* A slightly more vibrant blue */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 a:hover,
 a:focus {
-  color: #0047ab; /* lighter blue */
+  color: #003d82; /* Darker shade for hover */
   outline: none;
 }
 
@@ -43,17 +44,18 @@ a:focus {
 .btn,
 button,
 input[type="submit"] {
-  background-color: #002366;
+  background-color: #0056b3;
   color: white;
-  padding: 0.6rem 1.2rem;
+  padding: 0.7rem 1.5rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
   font-size: 1rem;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   display: inline-block;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .btn:hover,
@@ -62,17 +64,17 @@ input[type="submit"]:hover,
 .btn:focus,
 button:focus,
 input[type="submit"]:focus {
-  background-color: #0047ab;
-  box-shadow: 0 0 8px rgba(0, 71, 171, 0.6);
+  background-color: #003d82;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   outline: none;
 }
 
 /* Header */
 header {
-  background-color: #002366;
-  color: white;
+  background-color: #ffffff;
+  color: #333;
   padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -88,7 +90,7 @@ header .logo {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 2px;
-  font-family: 'Segoe UI Black', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav ul {
@@ -98,7 +100,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: #333;
   font-weight: 600;
   padding: 0.5rem 0.7rem;
   border-radius: 3px;
@@ -107,26 +109,26 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-  background-color: #0047ab;
+  background-color: #f0f0f0;
   outline: none;
 }
 
 /* Hero Sections */
 section[class$='hero'] {
-  background-color: #002366;
+  background-color: #0056b3;
   color: white;
-  padding: 3rem 0;
+  padding: 4rem 0;
   text-align: center;
 }
 
 section[class$='hero'] h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
 
 section[class$='hero'] p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.4;
@@ -140,7 +142,7 @@ section[class$='hero'] p {
 
 .fleet-intro h1 {
   font-size: 2.5rem;
-  color: #002366;
+  color: #0056b3;
   margin-bottom: 0.5rem;
 }
 
@@ -158,9 +160,9 @@ section[class$='hero'] p {
 
 .fleet-category h2 {
   font-size: 2rem;
-  color: #002366;
+  color: #0056b3;
   margin-bottom: 1rem;
-  border-bottom: 3px solid #0047ab;
+  border-bottom: 3px solid #0056b3;
   padding-bottom: 0.3rem;
   max-width: fit-content;
   margin-left: auto;
@@ -179,7 +181,7 @@ section[class$='hero'] p {
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
   padding: 1rem;
   text-align: center;
-  transition: box-shadow 0.3s ease;
+  transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -187,7 +189,8 @@ section[class$='hero'] p {
 
 .car-card:hover,
 .car-card:focus-within {
-  box-shadow: 0 6px 20px rgba(0, 35, 102, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 56, 179, 0.3);
+  transform: translateY(-5px);
   outline: none;
 }
 
@@ -202,7 +205,7 @@ section[class$='hero'] p {
 .car-card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.4rem;
-  color: #002366;
+  color: #0056b3;
   font-weight: 700;
 }
 
@@ -215,18 +218,18 @@ section[class$='hero'] p {
 
 .car-card strong {
   font-size: 1.1rem;
-  color: #0047ab;
+  color: #003d82;
 }
 
 .car-card .btn {
   margin-top: auto;
-  background-color: #0047ab;
+  background-color: #0056b3;
   font-weight: 700;
 }
 
 .car-card .btn:hover,
 .car-card .btn:focus {
-  background-color: #001844;
+  background-color: #003d82;
 }
 
 /* Fleet FAQ */
@@ -236,11 +239,11 @@ section[class$='hero'] p {
   border-radius: 8px;
   max-width: 900px;
   margin: 3rem auto;
-  box-shadow: 0 0 12px rgba(0,35,102,0.1);
+  box-shadow: 0 0 12px rgba(0,56,179,0.1);
 }
 
 .fleet-faq h2 {
-  color: #002366;
+  color: #0056b3;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -259,12 +262,12 @@ section[class$='hero'] p {
 }
 
 .fleet-faq ul li strong {
-  color: #0047ab;
+  color: #003d82;
 }
 
 /* Services Page */
 .services-hero {
-  background-color: #002366;
+  background-color: #0056b3;
   color: white;
   padding: 3rem 0;
   text-align: center;
@@ -291,10 +294,10 @@ section[class$='hero'] p {
 }
 
 .core-services h2, .additional-services h2 {
-  color: #002366;
+  color: #0056b3;
   font-size: 2rem;
   margin-bottom: 1.2rem;
-  border-bottom: 3px solid #0047ab;
+  border-bottom: 3px solid #0056b3;
   padding-bottom: 0.3rem;
   max-width: fit-content;
 }
@@ -315,12 +318,12 @@ section[class$='hero'] p {
 
 .service-item:hover,
 .service-item:focus-within {
-  box-shadow: 0 6px 20px rgba(0, 35, 102, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 56, 179, 0.3);
   outline: none;
 }
 
 .service-item h3 {
-  color: #002366;
+  color: #0056b3;
   margin-bottom: 0.7rem;
   font-weight: 700;
   font-size: 1.3rem;
@@ -342,7 +345,7 @@ section[class$='hero'] p {
 
 /* Contact Page */
 .contact-intro {
-  background-color: #002366;
+  background-color: #0056b3;
   color: white;
   padding: 3rem 0;
   text-align: center;
@@ -374,11 +377,11 @@ section[class$='hero'] p {
   background: white;
   padding: 2rem 2.5rem;
   border-radius: 8px;
-  box-shadow: 0 3px 12px rgba(0,35,102,0.15);
+  box-shadow: 0 3px 12px rgba(0,56,179,0.15);
 }
 
 .contact-info h2 {
-  color: #002366;
+  color: #0056b3;
   margin-bottom: 1rem;
   font-size: 1.8rem;
 }
@@ -392,7 +395,7 @@ section[class$='hero'] p {
 }
 
 .contact-info a {
-  color: #002366;
+  color: #0056b3;
   font-weight: 600;
 }
 
@@ -401,20 +404,20 @@ section[class$='hero'] p {
 }
 
 .social-links h3 {
-  color: #002366;
+  color: #0056b3;
   font-weight: 700;
   margin-bottom: 0.7rem;
 }
 
 .social-links a {
   font-weight: 600;
-  color: #002366;
+  color: #0056b3;
   margin-right: 1rem;
 }
 
 .social-links a:hover,
 .social-links a:focus {
-  color: #0047ab;
+  color: #003d82;
 }
 
 .contact-map-form {
@@ -427,18 +430,18 @@ section[class$='hero'] p {
   border-radius: 8px;
   width: 100%;
   height: 320px;
-  box-shadow: 0 3px 10px rgba(0,35,102,0.2);
+  box-shadow: 0 3px 10px rgba(0,56,179,0.2);
 }
 
 .contact-map-form .form {
   background: white;
   padding: 2rem 2.5rem;
   border-radius: 8px;
-  box-shadow: 0 3px 12px rgba(0,35,102,0.15);
+  box-shadow: 0 3px 12px rgba(0,56,179,0.15);
 }
 
 .contact-map-form .form h2 {
-  color: #002366;
+  color: #0056b3;
   margin-bottom: 1rem;
   font-size: 1.9rem;
 }
@@ -464,9 +467,9 @@ section[class$='hero'] p {
 
 .contact-map-form form input:focus,
 .contact-map-form form textarea:focus {
-  border-color: #002366;
+  border-color: #0056b3;
   outline: none;
-  box-shadow: 0 0 6px #0047ab;
+  box-shadow: 0 0 6px #003d82;
 }
 
 .contact-map-form form button {
@@ -479,12 +482,12 @@ section[class$='hero'] p {
 
 /* Typography */
 h1, h2, h3 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
 p, li, label, input, textarea {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Responsive adjustments */
@@ -517,7 +520,7 @@ p, li, label, input, textarea {
   justify-content: space-between;
   gap: 2rem;
   padding: 3rem 1rem;
-  background: #bfc6db;
+  background: #f0f4f8;
   flex-wrap: wrap;
 }
 
@@ -537,7 +540,48 @@ p, li, label, input, textarea {
 .booking-form-wrapper {
   flex: 1 1 50%;
   background: white;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0,35,102,0.1);
+  box-shadow: 0 4px 15px rgba(0, 56, 179, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.booking-form-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 56, 179, 0.15);
+}
+
+.booking-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.3);
+}
+
+.booking-form button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
